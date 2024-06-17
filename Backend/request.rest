@@ -1,0 +1,23 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJyZWRhbmEiLCJlbWFpbCI6InJlZGFuYUBnbWFpbC5jb20iLCJpYXQiOjE3MTc5ODI2OTYsImV4cCI6MTcxNzk4Mjc0Nn0.eCyc37UFoQE8MHw2gbImw1h9WGZrRhGQvwWNhXOX4Fk
+
+
+###
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "redana",
+    "email": "redana@gmail.com",
+    "password":"123456",
+    "confPassword":"123456"
+}
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "redana@gmail.com",
+    "password":"123456"
+}
